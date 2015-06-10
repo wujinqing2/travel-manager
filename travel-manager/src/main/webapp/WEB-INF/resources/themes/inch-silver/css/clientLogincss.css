@@ -1,0 +1,199 @@
+*{margin:0;padding:0;}
+body {width:100%;margin:0;padding:0;font-size:12px;color:#333;text-align:center;font-family:'宋体','新宋体',arial,verdana,sans-serif;}
+a{text-decoration:none;color:#666;} /*通用链接样式*/
+a:hover{text-decoration:none;color:#f25705;}
+div{text-align:left}
+p{text-indent:2em; padding:5px 0} 
+.input{border:#7f9db9 1px solid;}/*边框样式*/
+.br_both{line-height:0;height:0;clear:both;}/*换行并清除浮动*/
+.header{width:910px;height:80px;padding-top:10px;margin:auto; text-align:left}/*顶部*/
+.xuxian{margin:0;padding:0;border:1px #ccc dotted;clear:both;}
+.nav_bottom{width:910px;height:39px;margin:auto;background:url(/images/2008/bg_nav_bottom.gif) repeat-x}/*导航底部滚动新闻、搜索*/
+.nav_bottom ul{width:910px;height:39px;list-style:none;padding:0;margin:0}
+.nav_bottom ul li{margin:auto;float:left;padding-top:7px}
+/*----导航结束----*/
+/*----总框架开始----*/
+.content{width:910px;height:auto;text-align:left;padding:0;margin:auto;}/*总容器*/
+.content_left,.content_middle,.content_right,.content_middle_left,.content_middle_right{float:left}/*构建1行3列总框架*/
+.content_left{width:200px;}/*左部*/
+.content_middle{width:520px;}/*中部*/
+.content_middle_left{width:260px;}
+.content_middle_right{width:260px;}
+.content_right{width:190px;}/*中部*/
+.content_middle_right{width:250px; margin-left:10px}/*中部_右部*/
+.content_middle_right ul{width:232px;list-style:none;padding:0;margin:0;}
+.content_middle_right ul li{width:232px;border-right:1px solid #c8dae0;}
+.content_middle_right ul li a{padding:4px 0 0 8px;width:220px;height:16px;background:url(/images/2008/list_3red.gif) no-repeat 1px 10px;border-bottom:1px dashed #e5e5e5;color:#666;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+.content_middle_right ul li a:hover{padding:4px 0 0 8px;width:220px;height:16px;background:url(/images/2008/list_3red.gif) no-repeat 2px 10px;border-bottom:1px dashed #e5e5e5;color:#ff5a00;}
+.hot_bottom{ height12px;background:url(/images/2008/hot_bottom.gif) no-repeat}
+.content_right ul{margin:0;padding:0;list-style:none;}
+.content_right ul li{width:190px}
+/*----总框架结束----*/
+/*----会员登陆开始----*/
+.login{width:200px;height:85px;background:url(/images/2008/bg_login.gif) no-repeat;padding:0;margin:0}/*会员登录*/
+.login div{width:90px;height:20px;margin:0;padding:0}
+.login ul{list-style:none;margin:0;padding:10px 0 0 10px}
+.login ul li{width:90px;float:left;text-align:left;margin:0;padding:0}
+.login ul li font{ float:left}
+.zhuce a,.wjmm a{ width:90px;color:#ff5a00;height:20px;line-height:20px;}/*马上注册样式*/
+.zhuce a:hover,.wjmm a:hover{color:#f00;}
+.wjmm a{color:#00495c;}/*忘记密码样式*/
+/*----会员登陆结束----*/
+/*左部文章标题*/
+.tit_left{width:175px;height:21px;line-height:21px;margin:0;padding-left:25px;background:url(/images/2008/tit1_bg.gif) no-repeat;}
+.tit_left a{color:#000;}
+.tit_left a:hover{color:#f25705;}/*文章标题链接样式*/
+/*文章列表链接样式*/
+/*----左部文章样式结束----*/
+/*----在线减肥开始----*/
+.zxjf{width:182px;height:90px;background:#f9f9f9;border:1px solid #a5d2cf;border-top:none;border-bottom:none;padding:0}
+.zxjf div{text-align:left;padding-left:10px;height:35px;line-height:16px;color:#ff5a00}
+.zxjf_btn{width:184px;height:15px;background:url(/images/2008/tit_zxjf_btn.jpg) no-repeat}
+/*----在线减肥结束----*/
+/*----我的减肥故事开始----*/
+.jfgs{width:182px;height:195px;background:#f9f9f9 no-repeat;border:1px solid #d5e4e7; border-top:none}
+.jfgs ul{list-style:none;padding:0;margin:0;}
+.jfgs ul li{height:60px;float:left;padding:5px 0 0 5px}
+.jfgs_tit{width:120px;overflow:hidden;text-overflow:ellipsis}
+.jfgs_tit a{color:#184d6f;height:15px;line-height:15px;text-decoration:underline}
+.jfgs_yl{width:120px;height:35px;color:#848484;}
+/*----我的减肥故事结束----*/
+/*----营养检测开始----*/
+.yyjc{width:188;height:230px;background:#f9f9f9;border:1px solid #e1e1e1;border-top:none}
+.yyjc ul{width:178px;list-style:none;padding:10px 0 0 10px;margin:0;}
+.yyjc ul li{width:178px;list-style:none;padding:0;margin:0;}
+/*----营养检测结束----*/
+/*----右侧文章开始----*/
+.tit_right{width:160px;height:31px;line-height:31px;overflow:hidden;margin:0;padding-left:30px;background:url(/images/2008/tit_right.gif) no-repeat;color:#666;font-size:12px}
+.tit_right_l{width:100px;float:left}
+.tit_right_r{width:33px;float:right;padding-top:12px}
+.jkkd{width:188;height:260px;background:#f9f9f9;border:1px solid #e1e1e1;}
+.jkkd ul{width:178px;list-style:none;padding:2px 0 0 5px;margin:0;}
+.jkkd ul li{width:178px;list-style:none;padding:0;margin:0;}
+.jkkd a{display:block;padding:4px 0 0 6px;width:168px;height:16px;background:url(/images/2008/list_3red.gif) no-repeat 0px 10px;border-bottom:1px dashed #e5e5e5;color:#666;}
+.jkkd a:hover{display:block;padding:4px 0 0 6px;width:168px;height:16px;background:url(/images/2008/list_3red.gif) no-repeat 1px 10px;border-bottom:1px dashed #e5e5e5;color:#ff5a00;}
+.swrlb{width:188;height:100px;background:#f9f9f9;border:1px solid #e1e1e1;}
+.swrlb ul{width:168px;list-style:none;padding:10px 0 0 15px;margin:0;}
+.swrlb ul li{width:55px;list-style:none;padding:0;margin:0; float:left}
+.swrlb a{color:#666;}
+.swrlb a:hover{color:#ff5a00;}
+.xhnlb{width:188;height:90px;background:#f9f9f9;border:1px solid #e1e1e1;}
+.xhnlb ul{width:178px;list-style:none;padding:2px 0 0 5px;margin:0;}
+.xhnlb ul li{width:178px;list-style:none;padding:0;margin:0;}
+.xhnlb a{display:block;padding:4px 0 0 6px;width:168px;height:16px;background:url(/images/2008/list_3red.gif) no-repeat 0px 10px;border-bottom:1px dashed #e5e5e5;color:#666;}
+.xhnlb a:hover{display:block;padding:4px 0 0 6px;width:168px;height:16px;background:url(/images/2008/list_3red.gif) no-repeat 1px 10px;border-bottom:1px dashed #e5e5e5;color:#ff5a00;}
+
+/*----右侧文章结束----*/
+/*----专题活动开始----*/
+.zthd{width:501px;height:95px;background:#f9f9f9;border:1px solid #ededed;}
+.zthd ul{width:485px;height:75px;margin:0;padding:10px 0 0 0 ;list-style:none;}
+.zthd li{width:97px;height:75px;float:left;padding:0}
+.zthd li img{border:3px double #ccc;padding:0}
+.zthd li:hover img{border:3px double #ff5a00;}
+.zthd_txt{width:80px;height:15px;line-height:15px;text-align:center;border-style:none;margin:2px 0 0 0; float:left}
+.zthd_txt a{color:#999;} /*通用链接样式*/
+.zthd_txt a:hover{color:#f25705;}
+/*----专题活动结束----*/
+/*----诺特项目开始----*/
+.ntxm{width:501px;height:160px;background:#f9f9f9;border:1px solid #ededed;}
+.ntxm ul{margin:0px;padding:5px 15px;list-style:none;}
+.ntxm li{text-align:left;width:85px;float:left;color:#163956;font-weight:bold;padding-top:5px}
+.ntxm ul ul{width:130px;margin:0;padding:0;list-style:none;padding-top:5px}
+.ntxm ul ul li{height:15px;font-weight:normal;padding:0}
+.ntxm li img{border:3px double #ccc;}
+.ntxm li:hover img{border:3px double #ff5a00;}
+.ntxm_list a{display:block;padding:0 0 0 5px;width:135px;height:16px;background:url(/images/2008/list_2lan.gif) no-repeat 0px 5px;color:#666;text-decoration:none;}
+.ntxm_list a:hover{display:block;padding:0 0 0 5px;width:135px;height:16px;background:url(/images/2008/list_2cheng.gif) no-repeat 0px 5px;color:#ff5a00;text-decoration:none;}
+/*----诺特项目结束----*/
+/*----营养课堂(yykt.asp)开始----*/
+.yykt{width:501px;height:515px;background:#f9f9f9;border:1px solid #ededed;}
+.yykt ul{margin:0;padding:5px 0 0 18px;list-style:none;}
+.yykt ul li{text-align:left;width:241px;padding-left:5px;float:left}
+.yykt ul ul{width:235px;margin:0;padding:0;list-style:none}
+.yykt ul ul li{width:75px;float:left;color:#545454;}
+.tit_yykt{width:241px;height:24px; line-height:24px;background:url(/images/2008/tit_yykt.gif) no-repeat}/*分类标题背景*/
+.tit_yykt a{color:#930;font-size:13px}/*分类标题链接样式*/
+.tit_yykt a:hover{color:#930;}
+.tit_yykt_more{width:112px;text-align:right;}/*分类标题"更多"*/
+.tit_yykt_more a{color:#666;font-size:12px}
+.tit_yykt div{width:100px;line-height:27px;float:left}
+.tit_tit_yykt{width:150px;padding:5px 0 0 2px}
+.tit_tit_yykt a{color:#535353;font-weight:bold;}/*分类标题小标题样式*/
+.tit_tit_yykt a:hover{color:#930}
+.tit_tit_dome{width:150px;padding:5px 0 0 2px}/*分类标题小标题预览*/
+.tit_tit_dome a{color:#478496;}
+.tit_tit_dome a:hover{color:#f25705;}
+.yykt ul ul .yykt_list{width:200px;padding-left:5px; margin:0}
+.yykt_list a{display:block;padding:4px 0 0 5px;width:210px;height:16px; line-height:16px;background:url(/images/2008/list_3red.gif) no-repeat 0px 9px;border-bottom:1px dashed #e5e5e5;color:#666;text-decoration:none;}
+.yykt_list a:hover{display:block;padding:4px 0 0 5px;width:210px;height:16px; line-height:16px;background:url(/images/2008/list_3red.gif) no-repeat 1px 9px;border-bottom:1px dashed #e5e5e5;color:#ff5a00;text-decoration:none;}
+/*----营养课堂结束----*/
+/*----营养检测开始----*/
+
+/*----营养检测结束----*/
+
+/*----专家系统开始----*/
+.zjxt{width:178px;height:340px;padding:10px 2px;margin:0;list-style:none;color:#666;background:#f9f9f9;border:1px solid #acced5;}
+.zjxt li{height:auto;margin:0;padding-left:10px}
+/*----专家系统结束----*/
+/*----版权信息开始----*/
+.footer_line{width:910px;height:30px;padding:0;margin:auto;background:url(/images/2008/footer_line.gif) repeat-x 0px 20px}
+.footer{width:910px;height:86px;margin:auto;background:url(/images/2008/bg_footer.gif) repeat-x}
+.footer ul{width:890px;margin:0;padding-top:10px;list-style:none; float:left}
+.footer ul li{width:795px;margin:0;height:auto;float:left}
+.footer ul li ul{width:795px;margin:0;padding:0;list-style:none;}
+.footer ul li ul li{width:785px;margin:0;height:auto;color:#666;padding-left:10px;text-align:left}
+
+/*----内页横幅banner开始----*/
+.banner_heng{width:910px;padding:0;margin:auto}
+.banner_bottom{width:910px;height:14px;padding:0;margin:auto;background:url(images/bannar_bottom.jpg) repeat-x;}
+/*----内页横幅banner结束----*/
+
+/*----文章列表开始----*/
+.list{margin:0;padding:10px 0 0 0;list-style:none;}
+.list a{display:block;padding:4px 0 0 20px;width:488px;height:16px;background:url(/images/2008/list_lan_3.gif) no-repeat 8px 7px;border-bottom:1px  solid #fff;color:#666;text-decoration:none;}
+.list a:hover{display:block;padding:4px 0 0 20px;width:488px;height:16px;background:url(/images/2008/list_lan_3.gif) no-repeat 9px 7px #fafafa;border-bottom:1px  solid #77a6ba;color:#ff5a00;text-decoration:none;}
+/*----文章列表结束----*/
+/*----内页左部文章样式开始----*/
+.tit_left_bg{width:182px;height:180px;margin-bottom:10px;background:#f9f9f9;border:1px solid #77a6ba;border-top:none;}/*文章背景*/
+.tit_left_bg ul{width:170px;margin:0;padding:5px;list-style:none;overflow:hidden;}
+.tit_left_bg ul li{width:170px;margin:0;padding:0;overflow:hidden;}
+.tit_left_bg ul li a{padding:4px 0 0 8px;width:160px;height:16px;background:url(images/list_3red.gif) no-repeat 1px 10px;border-bottom:1px solid #e5e5e5;color:#666;text-decoration:none;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+.tit_left_bg ul li a:hover{display:block;padding:4px 0 0 8px;width:160px;height:16px;background:url(images/list_3red.gif) no-repeat 2px 10px;border-bottom:1px dotted #ff5a00;color:#ff5a00;text-decoration:none;}
+/*文章标题*/
+.tit2_right{width:178px;height:20px;padding-left:12px;line-height:20px;background:url(/images/2008/tit2.gif) no-repeat}
+.tit2_right div{width:85px;float:left}
+.right_more{ height:12px; padding-top:5px;text-align:right}
+.tit2_right_bg{width:188;height:155px;background:#f9f9f9;border:1px solid #e1e1e1;border-top:none}
+.tit2_right_bg ul{width:178px;list-style:none;padding:2px 0 0 5px;margin:0;}
+.tit2_right_bg ul li{width:178px;list-style:none;padding:0;margin:0;}
+.tit2_right_bg a{display:block;padding:4px 0 0 6px;width:168px;height:16px;background:url(/images/2008/list_3red.gif) no-repeat 0px 10px;border-bottom:1px dashed #e5e5e5;color:#666;text-decoration:none;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.tit2_right_bg a:hover{display:block;padding:4px 0 0 6px;width:168px;height:16px;background:url(/images/2008/list_3red.gif) no-repeat 1px 10px;border-bottom:1px dashed #e5e5e5;color:#ff5a00;}
+/*左右文章链接样式*/
+/*----右部文章样式结束----*/
+/*----内页中部网站地址开始----*/
+.location{width:502px;height:20px;line-height:22px;padding-left:8px;margin:0;background:url(/images/2008/location.gif) no-repeat}
+.location a{color:#000000;}
+.location a:hover{color:#f25705;}
+/*----内页中部网站地址结束----*/
+/*----成功案例开始----*/
+.cgal_bg{width:480px;height:85px;margin-top:5px;background:#fafafa;border:1px solid #eaeaea;}
+.cgal_bg ul{width:460px;margin:10px 10px 0 10px;padding:0;list-style:none;}
+.cgal_bg li{width:55px;height:65px;padding:2px;float:left;text-align:left;}
+.cgal_bg ul li .cggs_txt1{width:55px;height:20px;line-height:20px;text-align:left;}
+.cgal_bg ul .line_su{width:10px;height:65px;background:url(/images/2008/line_su.jpg) no-repeat}
+.cgal_bg ul li .cggs_txt2{width:300px;height:15px;line-height:15px;text-align:left;}
+.cgal_bg ul li .cggs_txt3{width:300px;height:20px;line-height:20px;text-align:left;}
+.cgal_bg ul li .cggs_btn{width:285px;height:17px;line-height:17px;background:url(/images/2008/cggs_btn.jpg) no-repeat}
+.cgal_bg ul li .cggs_txt2 a{color:#f25705}
+.cgal_bg ul li .cggs_txt2 a:hover{color:#993300}
+.cgal_bg ul li .cggs_txt3 a{color:#666}
+.cgal_bg ul li .cggs_txt3 a:hover{color:#478496}
+.cgal_bg ul li .cggs_btn a{color:#666}
+.cgal_bg ul li .cggs_btn a:hover{color:#f25705}
+.cgal_bg li img{border:1px inset #ccc;padding:0}
+.cgal_bg li:hover img{border:1px inset #ff5a00;}
+/*----成功案例结束----*/
+.c_nav{width:460px;margin:0;padding:10px 10px;list-style:none;}
+.c_nav li{width:60px;float:left}
+.c_nav li a{display:block;padding:4px 0 0 5px;height:16px;background:url(/images/2008/list_2lan.gif) no-repeat 0px 10px;border-bottom:1px solid #e5e5e5;color:#666;text-decoration:none;}
+.c_nav li a:hover{display:block;padding:4px 0 0 5px;height:16px;background:url(/images/2008/list_2lan.gif) no-repeat 0px 10px;border-bottom:1px solid #e5e5e5;color:#ff5a00;text-decoration:none;}

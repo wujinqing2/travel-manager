@@ -1,0 +1,133 @@
+@charset "utf-8";
+*{ margin:0; padding:0;}
+body{margin:0;padding:0;font-size:12px; text-align:center;color:#333;font-family:宋体,Arial, Helvetica, sans-serif;	background:url(../images/body_bg.gif) repeat-x top #fff;SCROLLBAR-FACE-COLOR: #8abff1;SCROLLBAR-HIGHLIGHT-COLOR: #d9e6f7;SCROLLBAR-SHADOW-COLOR: #fff; SCROLLBAR-3DLIGHT-COLOR: #d9e6f7; SCROLLBAR-ARROW-COLOR: #fff; SCROLLBAR-TRACK-COLOR: #d9e6f7; SCROLLBAR-DARKSHADOW-COLOR: #d9e6f7; SCROLLBAR-BASE-COLOR: #fff; }
+div,form,img,p,span,em,pre,ul,li {margin:0; padding:0; border:0;}
+ul,ol { list-style-type:none;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;font-size:14px;}
+td{word-break:break-all;}
+em{font-style:normal;}
+a{color:#008ed0; text-decoration:none;}
+a:hover{ color:#2372b4; text-decoration:underline;}
+.clear{ clear:both; height:0; display:block; overflow:hidden;}
+img, div,li, a, input { _behavior: url(../themes/inch/js/iepngfix.htc) }
+.btn_bg{width:67px; height:22px; line-height:22px; background:url(../images/btn_bg.jpg) no-repeat 0  0; border:0; margin:5px}
+.btn_add{width:55px; height:22px; background:url(../images/btn_add.png) no-repeat left;}
+.btn_modify{width:55px; height:22px; background:url(../images/btn_modify.png) no-repeat left;}
+.btn_use{width:55px; height:22px; background:url(../images/btn_use.png) no-repeat left;}
+.btn_notUse{width:67px; height:22px; background:url(../images/btn_notUse.png) no-repeat left;}
+.btn_delete{width:56px; height:22px; background:url(../images/btn_delete.png) no-repeat left;}
+.input_txt{width:60%; height:18px; border:1px solid #ccc; margin:0 0 0 5px;}
+.input_txt2{width:50px; height:18px; border:1px solid #ccc; margin:0 5px;}
+.input_area{width:90%; height:180px; border:1px solid #ccc; padding:5px; margin:5px 0;}
+.font_14{ font-size:14px;}
+.font_16{ font-size:16px;}
+.font_18{ font-size:18px;}
+.font_20{ font-size:20px;}
+.font_22{ font-size:22px;}
+.font_24{ font-size:24px;}
+.font_red{ color:red;}
+.font_blue{ color:blue;}
+.font_orange{ color:orange;}
+.font_bold{ font-weight:bold}
+.font_italic{ font-style:italic}
+.font_underline{ text-decoration:underline;}
+.font_linethrough{ text-decoration:line-through;}
+.bg_01{ background:#eee;}
+.bg_02{ background:#f4f7fc;}
+.bg_03{ background:#d9e6f7;}
+.bg_04{ background:#cee0f6;}
+.fl{float:left}
+.fr{float:right}
+.txtLeft{ text-align:left;padding-left:8px;}
+.txtRight{ text-align:right;padding-right:8px;}
+
+/*头部主体*/
+.top{ width:100%; height:50px; margin:0; padding:0; text-align:left; background:url(../images/bg_m_top.jpg) repeat-x 0 0; overflow:hidden;}
+.top p{ float:left; line-height:50px; margin:0 0 0 10px; color:#fff;}
+.top_nav{ float:right; width:350px; margin:8px 0 0 0; text-align:right;}
+.top_nav ul li{ float:left; width:32px; height:32px; margin:0 10px;}
+.top_nav ul li a{ display:block; width:32px; height:32px; line-height:100px; overflow: hidden;}
+.homeBg{ background:url(../images/Home.png) no-repeat 0 0;}
+.LeftBg{ background:url(../images/Left.png) no-repeat;}
+.RightBg{ background:url(../images/Right.png) no-repeat;}
+.xgmmBg{ background:url(../images/Change_Password.png) no-repeat;}
+.LogoutBg{background:url(../images/Logout.png) no-repeat;}
+.ExitBg{background:url(../images/Exit.png) no-repeat;}
+
+/*左边导航*/
+.leftBody{background:#cee0f6;}
+.leftBody a:hover{ text-decoration:none;}
+.mleft{text-align:left; margin:0;}
+.mleft .mleft_title{ width:100%;height:22px; line-height:22px; background:url(../images/leftTitle_bg.jpg) repeat-x top; border:1px solid #5aa1d5;}
+.mleft .mleft_title a{ width:100%;background:url(../images/leftTitle_pointer.jpg) no-repeat left; padding-left:15px; margin-left:15px;}
+.mleft .mleft_title a:hover{ font-weight:bold; color:blue;}
+.mleft_mainBox{ width:100%; height:590px; overflow-x:hidden; overflow-y:scroll;}
+.mleft .mleft_main h1{height:22px; line-height:22px; background-color:#e2e2e2; font-size:12px; font-weight:normal; border-top:1px solid #fff; border-bottom:1px solid #fff; margin:0;}
+.mleft .mleft_main h1 a{display:inline-block; padding-left:20px; width:100%;}
+.mleft .mleft_main h1 a:hover{color:#fff; font-weight:bold; background-color:#bdccdf;}
+.mleft .mleft_main ul li{height:22px; line-height:22px; background:#f6f6f6;border-bottom:1px solid #fff;}
+.mleft .mleft_main ul li a{ display:inline-block; padding-left:40px; width:100%; background:url(../images/icon1.gif) no-repeat 25px 0px; color:#2372b4;}
+.mleft .mleft_main ul li a:hover{color:#fff; font-weight:bold; background-color:#bdccdf;}
+.mleft .mleft_topTitle{ width:100%; height:60px; background:url(../images/leftTop_bg.jpg) repeat-y 0 0; text-align:center;}
+.mleft .mleft_topTitle h1{ color:#112f72; padding:10px 0;}
+.mleft .mleft_topTitle p{ color:#f00;}
+
+/*右边主体*/
+.mainbody{ background:#d9e6f7; padding:20px 0 0 0;}
+.listLine{ display:inline-block; width:90%;border-left:1px solid #5aa1d5;border-top:1px solid #5aa1d5; margin:10px auto; }
+.listLine table{ width:100%;border-collapse:collapse;border-spacing:0;  background:#f4f7fc;}
+.listLine table tr td{border-bottom:1px solid #5aa1d5;border-right:1px solid #5aa1d5; line-height:25px;}
+.listLine table tr th{ background:url(../images/thBG.jpg) repeat-x #d9e6f7; font-weight:bold; line-height:27px;border-bottom:1px solid #5aa1d5;border-right:1px solid #5aa1d5;}
+.listLine2{border:1px solid #5aa1d5;border-top:none;width:89.99%;line-height:20px;text-align:left; background:#f4f7fc; margin:-10px auto 0 auto;}
+.txtMain{padding:10px;}
+.listDiv{display:inline-block; width:90%; margin:0 auto;}
+.listDiv table{width:100%;border-collapse:collapse;border-spacing:0; line-height:25px;}
+
+.listTitle{ display:inline-block;border:1px solid #5aa1d5; width:90%;background:#f4f7fc;}
+.listTitle span{ float:left; font-weight:bold; font-size:14px;margin:10px 0 0 20px; color:#112f72;}
+.listTitle ul{ float:right ;width:300px; margin:5px auto; text-align:right;}
+.listTitle ul li{margin:0 5px; display:inline;}
+.listTitle ul li input{ border:0;}
+
+/*弹出页*/
+.listPot{ width:300px; background:#fff; border:5px solid #8abff1; position:absolute; left:37%; top:20%;}
+  .closed,.closed_visited,.closed_hover{float:left; width:298px;text-align:right;background:#d9e6f7; margin:1px 1px 0 1px;}
+  .closed a,.closed_visited a{ float:right;cursor:pointer;margin:3px 5px 3px 100px;width:15px; height:15px; background:url(../images/closed.gif) no-repeat 0 0; line-height:100px; overflow:hidden;}
+  .closed_hover a{float:right; cursor:pointer;margin:3px 5px 3px 100px;width:15px; height:15px; background:url(../images/closed2.gif) no-repeat 0 0; line-height:100px; overflow:hidden;}
+
+/*登陆页*/
+.loginBg{background:#5b9bd2;}
+.login{ width:620px; height:471px; margin:0 auto; overflow:hidden; background:url(../images/background.jpg) no-repeat top ; text-align:left;}
+.login h1{ font-size:18px; color:#295588; margin:150px 0 0 220px;}
+.login ul{ width:260px;display:inline-block;font-size:14px;margin:25px 0 0 165px;}
+.login ul li{ display:inline-block; margin:5px 0 0 0; width:100%; line-height:27px;}
+.login ul li b{ float:left;width:70px; text-align:right;font-weight:normal; color:#295588;}
+.login ul li span{ float:left; margin-right:10px;}
+.login_input{ border:1px solid #7f9db9; height:20px; line-height:20px;}
+.yz_input{width:50px;}
+.login ul{ width:260px;display:inline-block;font-size:14px;margin:10px 0 0 165px;}
+.loginbtn01{ width:65px; height:27px; background:url(../images/btn_login.jpg); border:0;}
+.loginbtn02{ width:65px; height:27px; background:url(../images/btn_cancel.jpg); border:0;}
+
+/*翻页*/
+.pageNum{display:inline-block; width:90%; height:30px; line-height:18px; padding:10px 0; margin:0 auto;}
+.pageNum a{ padding:3px 5px; border:1px solid #5aa1d5; background:#fff; margin:0 3px;}
+.pageNum a:hover{ background:#5aa1d5; color:#fff;}
+.pageNum_pointer{ font-weight:bold; color:#333;}
+
+/*验证样式*/
+label.error {
+	margin-left: 10px;
+	width: auto;
+	display: inline;
+	color:red;
+}
+input.error {
+	border: dashed 1px red;       
+} 
+
+/*弹出页*/
+.listPot{ width:300px; background:#fff; border:5px solid #8abff1; position:absolute; left:37%; top:20%;}
+  .closed,.closed_visited,.closed_hover{float:left; width:298px;text-align:right;background:#d9e6f7; margin:1px 1px 0 1px;}
+  .closed a,.closed_visited a{ float:right;cursor:pointer;margin:3px 5px 3px 100px;width:15px; height:15px; background:url(../images/closed.gif) no-repeat 0 0; line-height:100px; overflow:hidden;}
+  .closed_hover a{float:right; cursor:pointer;margin:3px 5px 3px 100px;width:15px; height:15px; background:url(../images/closed2.gif) no-repeat 0 0; line-height:100px; overflow:hidden;}

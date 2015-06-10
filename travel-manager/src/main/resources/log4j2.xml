@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="trace">
+	<Properties>
+		<Property name="fileName">/var/www/app/tomcatlog/travel-manager.log</Property>
+		<Property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Property>
+	</Properties>
+	<Appenders>
+		<!-- 日志输出到控制台 -->
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${pattern}" />
+		</Console>
+
+		<!-- 日志输出到文件 -->
+		<File name="file" fileName="${fileName}">
+			<PatternLayout pattern="${pattern}" />
+		</File>
+	</Appenders>
+
+	<Loggers>
+		<Logger name="net.rytong.admin" level="trace">
+			<AppenderRef ref="file" />
+		</Logger>
+		<Root level="trace">
+			<AppenderRef ref="console" />
+		</Root>
+	</Loggers>
+
+
+
+</Configuration>

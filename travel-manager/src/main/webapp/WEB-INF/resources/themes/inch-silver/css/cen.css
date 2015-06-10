@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background:#000;}
+img, div,li, a, input,span { _behavior: url(js/iepngfix.htc) }
+/*弹出*/
+.pop_main{width:384px;margin:20px auto;}
+.pop_Title,.popLogin_main{width:90%;margin:0 auto;}
+.pop_mainTop{ width:100%;height:15px;}
+.pop_mainTop span{ float:left; width:20px; height:15px;background:url(../images/popBg_rounded.png) no-repeat 0 -15px;overflow:hidden;}
+.pop_mainTop p{ float:left; width:90%; height:15px; background:#fff; border:1px solid red;}
+.pop_mainBottom{ width:100%;height:15px;background:url(../images/popBg_bottom.png) no-repeat 0 0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/popBg_bottom.png'); _background-image: none;}
+.pop_mainInfo{ width:100%; background:#fff;}
+  .pop_Title{height:46px;overflow:hidden;}
+  .pop_Title h1{ margin:20px 0 0 60px; font-size:16px;}
+  .popLogin_main{}
+  .popLogin_main p{ text-align:right}
+  .popLogin_main ul{ background:#f6f5f1; padding:10px 0; margin:10px 0; display:inline-block;}
+  .popLogin_main ul li{ float:left; width:100%; margin:5px 0;}
+  .popLogin_main ul li span{ float:left; width:80px; text-align:right;}
+  .popLogin_main ul li p{ float:left;}

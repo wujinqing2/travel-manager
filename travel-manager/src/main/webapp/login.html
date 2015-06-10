@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理系统登陆</title>
+<link href="resources/images/nt_logo.gif" mce_href="resources/images/nt_logo.gif" rel="icon" type="image/png" />
+<link href="resources/themes/inch-silver/css/style.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='dwr/engine.js'></script>
+<script type='text/javascript' src='dwr/interface/LoginAjaxService.js'></script>
+<script type="text/javascript">
+function submitForm(){
+	var userName=document.getElementById("userName").value;
+	var password=document.getElementById("password").value;
+	if(userName==""||userName==null){
+		alert("请输入用户名！");
+		return false;
+	}
+	if(password==""||password==null){
+		alert("请输入密码！");
+		return false;
+	}
+	document.getElementById("msg").innerHTML="正在登录，请稍候......";
+	document.getElementById("msg").style.display="block";
+	LoginAjaxService.login(userName,password,function(data){
+		 if(data["result"]=="true"){
+		     document.getElementById("msg").innerHTML="正在登录，请稍候......";
+			 window.location.href="./system/index.action";
+		 }else{
+			document.getElementById("msg").innerHTML=data["msg"];
+		 }
+		 
+	});
+	return false;
+}
+
+function refresh() {
+	document.getElementById('img').src="kaptcha.jpg?"+Math.random();
+}
+</script>
+</head>
+
+<body>
+<div class="login_top"><div class="login_logo"><img src="resources/images/nt_logo.gif" /></div></div>
+<div class="login_box">
+<form name="form" id="form" method="post">
+   <ul>
+     <li><label>用户名：</label><input type="text" class="login_input" id="userName" name="user.userName"/></li>
+     <li><label>密&nbsp; 码：</label><input class="login_input" id="password" name="user.password" type="password"/></li>
+     <li style="display:none;color:red;text-indent:49px" id="msg"></li>
+     <li><input type="submit" id="sub" class="login_btn" value="" onclick="return submitForm();"/></li>
+   </ul>
+</form>
+</div>
+<div class="login_foot"><p>关于我们 - 联系我们 2007©版权所有：诺伽特健康科技有限公司</p></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0;padding:0;font-size:12px; text-align:center;color:#333;font-family:宋体,Arial, Helvetica, sans-serif; background:none;}
+*{ margin:0; padding:0;}
+div,form,img,p,span,em,pre,ul,li {margin:0; padding:0; border:0;}
+ul,ol { list-style-type:none;}
+.top_menu{ float:left;margin:22px 0 0 0;}
+.top_menu ul li{ float:left; height:26px; line-height:26px; margin-left:5px; background:url(../themes/inch-silver/images/btn_bg.jpg) repeat-x 0 0;}
+.top_menu ul li a{ display:inline-block; padding:0 10px; font-weight:bold; color:#fff;}
+.top_menu ul li a:hover{ color:#ccc;}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+*{ margin:0; padding:0;}
+body{margin:0;padding:0;font-size:12px; line-height:18px; text-align:center;color:#333;font-family:宋体,Arial, Helvetica, sans-serif;}
+div,form,img,p,span,em,pre,ul,li {margin:0; padding:0; border:0;}
+ul,ol { list-style-type:none;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
+em{font-style:normal;}
+a{ color:#333;text-decoration:none;}
+a:hover{color:#126fbd; text-decoration:underline}
+.clear{ clear:both; height:0; display:block; overflow:hidden;}
+.hidden{ display:none;}
+table{border-collapse:collapse;border-spacing:0;}
+th{ text-align:center}
+table img{ border:0;}
+.marginH10{ margin-top:10px;}
+.btn_bg{ height:22px; line-height:21px; background:url(../images/btn_bg.jpg) repeat-x 0 0; border:1px solid #94c7e2; padding:0 10px;}
+.font_red{ color:red;}.font_red:hover{ color:red;}
+.font_orange{ color:orange;}
+.font_blue{ color:#126fbd;}
+.input_txt{width:80%;}
+.bg_yellow{ background:#ffffcc}
+.bg_blue{ background:#ddedfc}
+.fl{ float:left}
+.fr{ float:right;}
+.txtCenter{ text-align:center}
+.txtRight{ text-align:right}
+.font_bold{ font-weight:bold}
+/*头部*/
+.head{width:776px; height:81px; margin:0 auto;}
+.header{ width:776px; height:81px; margin:0 auto; background:url(../images/login1.jpg) no-repeat 0 0;}
+.header p{ position:absolute; bottom:20px; right:10px;}
+.header p a{ height:15px;display:inline-block}
+.header p a:hover{ text-decoration:underline}
+.topBuyCar{ background:url(../images/ind1.gif) no-repeat 0 0; padding-left:23px;}
+/*脚部*/
+.foot{ width:776px; margin:0 auto;}
+.footer{  width:776px;margin:0 auto;border-top:1px solid #94c7e2}
+.footer p{ border-top:7px solid #ddedfc; padding-top:20px; text-align:right}
+/*主体*/
+.box{width:776px; margin:10px auto;}
+/*左边导航*/
+.left{ width:162px;}
+.leftBg{ background:#cee5f7}
+.leftMenu{ width:162px; margin:0 auto; background:url(../images/login2.jpg) no-repeat 0 0 #cee5f7;  padding:0 0 10px 0;overflow:hidden;}
+.leftMenu a:hover{ color:#126fbd; text-decoration:none}
+.leftMenu p{ margin:20px 0 10px 0; height:25px; line-height:25px;}
+.leftMenu ul,.leftMenu ul li{ display:inline-block; width:100%;}
+.leftMenu ul li{ height:38px; line-height:38px; background:url(../images/login5.jpg) no-repeat top center; font-weight:bold;}
+.leftMenu ul li a{ display:block;}
+.leftMenu ol{width:65%; margin:0 auto;border:1px solid #fff;}
+.leftMenu ol li{ border-top:1px solid #fff; width:100%; margin:-1px auto 0 auto; height:20px; line-height:20px; background:#d9ebf9; text-align:left;}
+.leftMenu ol li a{ display:block; text-indent:3px;}
+/*右边*/
+.right{ width:600px;}
+.right_main{width:600px; margin:0 auto; text-align:left;}
+.boxB{ width:550px; margin:10px auto;}
+.fastNav{width:100%; height:20px; line-height:20px; border-bottom:1px dashed #bbb;}
+.table1 th,.table1 td{ padding:5px 3px;}
+.table2 { border-top:1px solid #d2d2d2;border-left:1px solid #d2d2d2;}
+.table2 tr th,.table2 tr td{ padding:5px;border-right:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;}
+.table2 tr th{ background:#cee5f7}
+.dBorer{ border:1px dotted #bbb;}
+.hydy{ line-height:25px; font-size:14px;}
+.hydy p{ width:96%; margin:5px auto;}
+/*产品中心*/
+.proBox{ width:100%;}
+.proBox ul{ display:block}
+.proBox ul li{ float:left; width:25%; text-align:center; margin:10px 0;}
+.proBox ul li img{ border:1px solid #e2e2e2; width:120px; height:120px;}
+.proBox ul li a{ display:inline-block; width:100%; margin-bottom:5px;}
+.proBox p{ margin-bottom:3px;}
+.proBox h1{ margin:10px 0 20px 0;}
+.imgBorder{ border:1px solid #e2e2e2; padding:3px;}
+/*翻页*/
+.pageNum{ width:100%; text-align:right}

@@ -1,0 +1,108 @@
+body, td {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.nav {
+	font-size: 12px;
+	line-height: 20px;
+}
+.nav a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #000000;
+}
+.nav a:hover {
+	color: #126FBD;
+	text-decoration: none;
+}
+.nav a:visited {
+	text-decoration: none;
+}
+.title1 {
+	font-size: 12px;
+	height: 20px;
+	color: #1574C4;
+	line-height: 20px;
+
+}
+.title1 a {
+	text-decoration: none;
+	color: #1574C4;
+
+}
+.title1 a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #3399FF;
+}
+.title2 {
+	font-size: 12px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.title2 a {
+	color: #FFFFFF;
+}
+.title2 a:hover {
+	color: #C7E3FB;
+}
+.title3 {
+	font-size: 12px;
+	line-height: 20px;
+}
+.title3 a {
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+.title3 a:hover {
+	color: #126FBD;
+}
+.title4 {
+	font-size: 12px;
+	line-height: 20px;
+}
+.title4 a {
+	line-height: 20px;
+	color: #50b15d;
+	text-decoration: none;
+}
+.title4 a:hover {
+	color: #000000;
+}
+.title5 {
+	font-size: 12px;
+	line-height: 20px;
+}
+.title5 a {
+	line-height: 20px;
+	color: #ffa200;
+	text-decoration: none;
+}
+.title5 a:hover {
+	color: #000000;
+}
+
+.title6 {
+	font-size: 16px;
+	line-height: 20px;
+}
+.title6 a {
+	line-height: 20px;
+	color: #ffa200;
+	text-decoration: none;
+}
+.title6 a:hover {
+	color: #000000;
+}
+
+.table {
+	margin: 1px;
+	padding: 1px;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+}
