@@ -1,6 +1,6 @@
 package net.rytong.admin.sys.service;
 
-import net.rytong.admin.sys.entity.User;
+import net.rytong.admin.sys.entity.SysUser;
 
 public interface UserService {
 	/**
@@ -11,7 +11,7 @@ public interface UserService {
 	 * @param user
 	 * @return
 	 */
-	public void save(User user);
+	public void save(SysUser user);
 	
 	/**
 	 * <pre>
@@ -22,5 +22,5 @@ public interface UserService {
 	 * @param password
 	 * @return
 	 */
-	public User load(String userName, String password);
+	public SysUser load(String userName, String password);
 }

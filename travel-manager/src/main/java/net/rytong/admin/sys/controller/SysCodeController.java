@@ -14,14 +14,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/sys")
+@RequestMapping("/sys/sys_code/")
 public class SysCodeController extends BaseController{
 	private final Logger logger = LogManager.getLogger(getClass());
 	
 	@Autowired
 	private SysCodeService sysCodeService;
 	
-	@RequestMapping("/add")
+	@RequestMapping("add")
 	public String add(SysCode entity, Model model)
 	{
 		sysCodeService.save(entity);
@@ -31,7 +31,7 @@ public class SysCodeController extends BaseController{
 		return "sysCodeList";
 	}
 	
-	@RequestMapping("/load")
+	@RequestMapping("load")
 	public String load(Long id, Model model)
 	{
 		HttpServletRequest req = getReq();

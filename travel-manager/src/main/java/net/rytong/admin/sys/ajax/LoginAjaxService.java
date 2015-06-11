@@ -9,8 +9,9 @@ import net.rytong.admin.common.ajax.BaseAjaxService;
 import net.rytong.admin.common.security.SecurityHelper;
 import net.rytong.admin.common.service.BaseSessionKeyConstant;
 import net.rytong.admin.common.util.Assert;
-import net.rytong.admin.sys.entity.User;
+import net.rytong.admin.sys.entity.SysUser;
 import net.rytong.admin.sys.service.UserService;
+import net.rytong.admin.sys.util.CacheUtil;
 
 import org.directwebremoting.annotations.RemoteMethod;
 import org.directwebremoting.annotations.RemoteProxy;
@@ -21,16 +22,15 @@ public class LoginAjaxService extends BaseAjaxService{
 	@Autowired
 	private UserService userService;
 
-
 	/**
-	 * 客户端登陆
+	 * 登陆
 	 * 
 	 * @param userName
 	 * @param password
 	 * @return
 	 */
 	@RemoteMethod
-	public Map<String, String> clientLogin(String userName, String password) {
+	public Map<String, String> login(String userName, String password) {
 		Map<String, String> map = new HashMap<String, String>();
 		
 		if(!Assert.isNotEmpty(userName))
@@ -51,8 +51,7 @@ public class LoginAjaxService extends BaseAjaxService{
 		
 		password = SecurityHelper.encrypt(Assert.trim(password));// 对明文密码进行加密
 		
-		User user = userService.load(Assert.trim(userName), password);
-		
+		SysUser user = userService.load(Assert.trim(userName), password);
 		
 		if(!Assert.isNotNull(user))
 		{
@@ -64,8 +63,13 @@ public class LoginAjaxService extends BaseAjaxService{
 		
 		HttpSession session = getSession();
 		
-		session.setAttribute(BaseSessionKeyConstant.USER_ID, user.getId());
-		session.setAttribute(BaseSessionKeyConstant.SECURITY_TOKEN, SecurityHelper.generateToken(userName + password));
+		String token = SecurityHelper.generateToken(userName + password);
+		Long userId = user.getId();
+		
+		session.setAttribute(BaseSessionKeyConstant.USER_ID, userId);
+		session.setAttribute(BaseSessionKeyConstant.SECURITY_TOKEN, token);
+		
+		CacheUtil.userLoginInfoMap.put(userId, token);
 		
 		map.put("result", "true");
 		
@@ -73,24 +77,25 @@ public class LoginAjaxService extends BaseAjaxService{
 	}
 
 	/**
-	 * 后台管理员登陆
-	 * 
-	 * @param userName
-	 * @param password
-	 * @return
-	 */
-	@RemoteMethod
-	public Map<String, String> login(String userName, String password) {
-		Map<String, String> map = new HashMap<String, String>();
-					map.put("result", "true");
-		return map;
-	}
-
-	/**
-	 * 登出
+	 * 退出
 	 */
 	@RemoteMethod
 	public void loginOut() {
+		try {
+			HttpSession session = getSession();
+			Long userId = (Long)session.getAttribute(BaseSessionKeyConstant.USER_ID);
+			
+			if( null != userId)
+				CacheUtil.userLoginInfoMap.remove(userId);
+			
+			session.setAttribute(BaseSessionKeyConstant.USER_ID, null);
+			session.setAttribute(BaseSessionKeyConstant.SECURITY_TOKEN, null);
+			
+			this.getReq().getSession().invalidate();
+			this.getSession().invalidate();
+		} catch (Exception e) {
+			logger.error("loginOut", e);
+		}
 	}
 
 }

@@ -45,6 +45,7 @@
 	</bean>
 	
     <mvc:interceptors>
+    
 	    <mvc:interceptor>
 	        <mvc:mapping path="/**"/>
 	        <!-- 登录页面不拦截 -->

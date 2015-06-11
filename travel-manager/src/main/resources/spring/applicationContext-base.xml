@@ -34,11 +34,7 @@
     
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="packagesToScan">
-        	<list>
-        		<value>net.rytong.admin</value>
-        	</list>
-        </property>
+        <property name="packagesToScan" value="net.rytong.admin" />
         <property name="hibernateProperties">
 	        <props>
 	        	<prop key="hibernate.dialect">${hibernate.dialect}</prop>

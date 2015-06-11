@@ -5,7 +5,7 @@ import java.util.List;
 import net.rytong.admin.common.dao.BaseDao;
 import net.rytong.admin.common.util.Assert;
 import net.rytong.admin.sys.dao.UserDao;
-import net.rytong.admin.sys.entity.User;
+import net.rytong.admin.sys.entity.SysUser;
 
 import org.springframework.stereotype.Component;
 
@@ -13,14 +13,14 @@ import org.springframework.stereotype.Component;
 public class UserDaoImpl extends BaseDao implements UserDao {
 
 	@Override
-	public void save(User user) {
+	public void save(SysUser user) {
 		if(user != null)
 			hibernateTemplate.save(user);
 	}
 
 	@Override
-	public User load(String userName, String password) {
-		List<User> list = (List<User>)hibernateTemplate.find("from User model where model.name = ? and model.password = ?", userName, password);
+	public SysUser load(String userName, String password) {
+		List<SysUser> list = (List<SysUser>)hibernateTemplate.find("from SysUser model where model.name = ? and model.password = ?", userName, password);
 		
 		if(Assert.isNotEmpty(list))
 			return list.get(0);
